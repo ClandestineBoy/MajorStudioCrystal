@@ -10,8 +10,10 @@ public class ObsticleController : MonoBehaviour
     private Game_Manager manager;
     Rigidbody rb;
     public int weight;
+    bool meetsCount;
     void Start()
     {
+        meetsCount = false;
         gameManager = GameObject.FindGameObjectWithTag("GameController");
         manager = gameManager.GetComponent<Game_Manager>();
         rb = GetComponent<Rigidbody>();
@@ -25,7 +27,12 @@ public class ObsticleController : MonoBehaviour
         weightDisplay.text = "" + weight;
         if(manager.playerStones.Count >= weight)
         {
-            if(!manager.aiming)
+            if (!meetsCount)
+            {
+                meetsCount = true;
+                rb.isKinematic = false;
+            }
+            if (!manager.aiming)
             rb.isKinematic = false;
             if (Input.GetMouseButtonUp(1))
             {
