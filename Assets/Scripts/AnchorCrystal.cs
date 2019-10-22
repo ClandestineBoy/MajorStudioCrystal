@@ -30,6 +30,8 @@ public class AnchorCrystal : MonoBehaviour
         else
         {
             cc.isTrigger = true;
+            if(Vector3.Distance(transform.position, target.transform.position) <= .5f)
+            transform.position = target.transform.position;
         }
         moveDir = new Vector3(transform.position.x - target.transform.position.x, transform.position.y - target.transform.position.y, transform.position.z - target.transform.position.z);
         //moveDir.Normalize();
