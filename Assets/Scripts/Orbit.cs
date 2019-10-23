@@ -34,6 +34,7 @@ public class Orbit : MonoBehaviour
         {
            
         }
+
         if (Input.GetMouseButtonDown(0))
         {
             if(crystalClockwise < 0)
