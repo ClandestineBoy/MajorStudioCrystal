@@ -12,16 +12,17 @@
     <session id="567530797">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera_Controller.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -43,6 +44,32 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Orbit.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
+              <folding>
+                <marker date="1571861888419" expanded="false" signature="6:78" ph="..." />
+                <marker date="1571861888419" expanded="true" signature="114:2894" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="322:589" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="703:1078" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="731:778" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="791:823" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="865:1072" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="912:978" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="995:1062" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="1138:1962" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="1787:1956" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="1991:2593" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="2641:2891" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="2697:2885" ph="{...}" />
+                <marker date="1571861888419" expanded="true" signature="2734:2875" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -50,6 +77,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Camera_Controller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Orbit.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -69,11 +97,11 @@
     </navigator>
     <panes>
       <pane id="FileSystemExplorer" />
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-      </pane>
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
       </pane>
     </panes>
   </component>
@@ -121,11 +149,12 @@
       <option name="presentableId" value="Default" />
       <updated>1571501724795</updated>
       <workItem from="1571501729986" duration="400000" />
+      <workItem from="1571948514060" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400000" />
+    <option name="totallyTimeSpent" value="999000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -138,18 +167,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -157,12 +179,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +230,30 @@
             <marker date="1571345480957" expanded="true" signature="2339:2434" ph="{...}" />
             <marker date="1571345480957" expanded="true" signature="2534:2621" ph="{...}" />
             <marker date="1571345480957" expanded="true" signature="2634:2721" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Orbit.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <marker date="1571861888419" expanded="false" signature="6:78" ph="..." />
+            <marker date="1571861888419" expanded="true" signature="114:2894" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="322:589" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="703:1078" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="731:778" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="791:823" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="865:1072" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="912:978" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="995:1062" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="1138:1962" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="1787:1956" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="1991:2593" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="2641:2891" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="2697:2885" ph="{...}" />
+            <marker date="1571861888419" expanded="true" signature="2734:2875" ph="{...}" />
           </folding>
         </state>
       </provider>
