@@ -4822,26 +4822,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840113131}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1884358308 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8306429821487498769, guid: b6b2fc178293d704bbffe9512ba6d792,
-    type: 3}
-  m_PrefabInstance: {fileID: 6311366338993515818}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1884358309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884358308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05667521d38004e4cb5e365079d62cfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 314459652}
-  moveSpeed: 1000
 --- !u!4 &1899466704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2803276030379848991, guid: 36cee847308fc1846a35b5381f66518d,
@@ -5818,21 +5798,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7463553897405957524, guid: b6b2fc178293d704bbffe9512ba6d792,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 7463553897405957524, guid: b6b2fc178293d704bbffe9512ba6d792,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5238091677040386203, guid: b6b2fc178293d704bbffe9512ba6d792,
-        type: 3}
-      propertyPath: m_TagString
-      value: OrbitPoint
-      objectReference: {fileID: 0}
+    - target: {fileID: 1884358309, guid: b6b2fc178293d704bbffe9512ba6d792, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 314459652}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6b2fc178293d704bbffe9512ba6d792, type: 3}
 --- !u!1 &6453527763536486193
