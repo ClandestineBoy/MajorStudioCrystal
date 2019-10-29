@@ -8,6 +8,7 @@ TagManager:
   - OrbitPoint
   - Obstical
   - Move Boy
+  - zerograv
   layers:
   - Default
   - TransparentFX
