@@ -8,6 +8,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="AnchorCrystal.cs" t="Include" />
           <e p="Camera_Controller.cs" t="Include" />
           <e p="Game_Manager.cs" t="Include" />
           <e p="ObsticleController.cs" t="Include" />
