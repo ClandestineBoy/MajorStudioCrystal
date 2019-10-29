@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class FallChecker : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform player;
+    public Transform spawnpoint;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        player.position = spawnpoint.position;
     }
 }
