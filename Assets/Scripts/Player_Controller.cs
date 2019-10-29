@@ -48,8 +48,10 @@ public class Player_Controller : MonoBehaviour
     int rotVar = 0;
     void Update()
     {
+        //Debug.DrawRay(this.transform.position, transform.forward, Color.yellow, 1000f);
+
         rotVar += 1;
-        orbitPoint.transform.rotation = Quaternion.Slerp(orbitPoint.transform.rotation, Quaternion.Euler(0.0f, 0.0f, 0.0f),desiredRotationSpeed);
+        //orbitPoint.transform.rotation = Quaternion.Slerp(orbitPoint.transform.rotation, Quaternion.Euler(0.0f, 0.0f, 0.0f),desiredRotationSpeed);
         if (!manager.aiming)
         {
             swarmPar.rotation = transform.rotation;
