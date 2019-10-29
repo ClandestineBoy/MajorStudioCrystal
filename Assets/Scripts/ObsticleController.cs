@@ -45,7 +45,7 @@ public class ObsticleController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player" && manager.aiming && manager.playerStones.Count >= 2*weight)
+        if(other.gameObject.tag == "Move Boy" && manager.aiming && manager.playerStones.Count >= 2*weight)
         {
             transform.SetParent(other.gameObject.transform);
             transform.position = other.gameObject.transform.position;

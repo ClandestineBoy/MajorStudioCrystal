@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: 1032a9c559da1ee41915b2cc103aa98a
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Body_Diffuse
+    second: {fileID: 2800000, guid: 244fd945665144d4ebcdd6b67c15d862, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Body_Gloss
+    second: {fileID: 2800000, guid: 376acce5ab03f11429b5f544ecb76adf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Body_Normal
+    second: {fileID: 2800000, guid: efe67da73c04f1a4688ab877c34bf82c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Body_Opacity
+    second: {fileID: 2800000, guid: c15a859ba816a6b41aa842c30539c5f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Body_Specular
+    second: {fileID: 2800000, guid: 86472a3626175c94fbf560298b59e5fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Bottom_Diffuse
+    second: {fileID: 2800000, guid: 14a6696fe38cba44eb03e4e80e5d07f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Bottom_Gloss
+    second: {fileID: 2800000, guid: 5d8fdf5a695d7bb43976d31a5158a3cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Bottom_Normal
+    second: {fileID: 2800000, guid: af240479bccd8b747b8e132362e6328d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Bottom_Opacity
+    second: {fileID: 2800000, guid: 144703eb9cda82a4d83dae216e850579, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Bottom_Specular
+    second: {fileID: 2800000, guid: b2dba91426dcbd14286845df9e6817fa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Glove_Diffuse
+    second: {fileID: 2800000, guid: 6a8901e1423b3744cb17d7cf3aae7f6d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Glove_Gloss
+    second: {fileID: 2800000, guid: 725b45d9fa7fe7549b1b69a6e5be22b3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Glove_Normal
+    second: {fileID: 2800000, guid: 4f186771f34d71a4893dd6af2d038f58, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Glove_Opacity
+    second: {fileID: 2800000, guid: de0bc4db2fb35114ab2a5d1324df47b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Glove_Specular
+    second: {fileID: 2800000, guid: a275245ae89ec6f43b53287ee547f02a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Hair_Diffuse
+    second: {fileID: 2800000, guid: 56434846c2da5674e9c78828cb63f76b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Hair_Gloss
+    second: {fileID: 2800000, guid: b3a7cf9a74c6d384ab65951561b55cf6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Hair_Normal
+    second: {fileID: 2800000, guid: a758626421e4f9841bd8d5b2c3e57722, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Hair_Opacity
+    second: {fileID: 2800000, guid: 605e857db7105cf428f63695b5624c56, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Hair_Specular
+    second: {fileID: 2800000, guid: 8927e3010bba76a4f8a8feb614b54c10, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Shoes_Diffuse
+    second: {fileID: 2800000, guid: 581fafb2f21bcf04b98c707a9bf25c7d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Shoes_Gloss
+    second: {fileID: 2800000, guid: c4b67ee98d929b544b839a4834667b66, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Shoes_Normal
+    second: {fileID: 2800000, guid: bc29cb6e9f3404440b89232ce99fc02f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Shoes_Opacity
+    second: {fileID: 2800000, guid: 8ebb0ab7f148b29488811c7da677d765, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Shoes_Specular
+    second: {fileID: 2800000, guid: 2939190e66915f94bb07950cff2821f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Top_Diffuse
+    second: {fileID: 2800000, guid: f3d2f0b58e3b5904db33bcf59bb52d4c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Top_Gloss
+    second: {fileID: 2800000, guid: 4686d541a172aaf4e8f0cae633e8d878, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Top_Normal
+    second: {fileID: 2800000, guid: 113010fb64387474ca73ff826ddc0670, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Top_Opacity
+    second: {fileID: 2800000, guid: b08bcc2621790814fb1691ef136e0622, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CrystalLightsMainChar_Top_Specular
+    second: {fileID: 2800000, guid: 729810f615d084c4d9c11d3520b31ffe, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - 98db0afc8022def4e9069d833e01dfdc
+  - eb55fd9b2c7aa7b47971a26eaa6c7bd3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

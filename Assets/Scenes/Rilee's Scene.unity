@@ -5822,6 +5822,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5238091677040386203, guid: b6b2fc178293d704bbffe9512ba6d792,
+        type: 3}
+      propertyPath: m_TagString
+      value: Move Boy
+      objectReference: {fileID: 0}
     - target: {fileID: 1884358309, guid: b6b2fc178293d704bbffe9512ba6d792, type: 3}
       propertyPath: target
       value: 
