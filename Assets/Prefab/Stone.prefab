@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1.0822332, y: 1.0822332, z: 1.0822332}
   m_Children: []
   m_Father: {fileID: 2803276030379848991}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
 --- !u!212 &130125973
 SpriteRenderer:
@@ -109,7 +109,7 @@ Transform:
   m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
   m_Children: []
   m_Father: {fileID: 2803276030379848991}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &4115213519159862632
 Light:
@@ -203,8 +203,8 @@ Transform:
   m_LocalPosition: {x: 2.19, y: 2, z: 5.71}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
-  - {fileID: 4860755366359046489}
   - {fileID: 130125974}
+  - {fileID: 4860755366359046489}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -266,7 +266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfaa17d2b34d0ba4cbf990d9ff303c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arcaneCircle: {fileID: 130125972}
   dir: {x: 0, y: 0, z: 0}
   forward: {x: 0, y: 0, z: 0}
   side: {x: 0, y: 0, z: 0}
@@ -276,6 +275,10 @@ MonoBehaviour:
   formationarray: []
   diagonal: {x: 0, y: 0, z: 0}
   even: 0
+  locked: 0
+  lockStart: {fileID: 0}
+  lockEnd: {fileID: 0}
+  lockStartTime: 0
 --- !u!54 &2803276030379848960
 Rigidbody:
   m_ObjectHideFlags: 0
