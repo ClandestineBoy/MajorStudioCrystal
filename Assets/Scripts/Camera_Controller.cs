@@ -78,12 +78,12 @@ public class Camera_Controller : MonoBehaviour
     {
         journeyTime = 1/zoomSpeed;
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0) && !manager.aiming)
         {
             manager.aiming = true;
             zoomStartTime = Time.time;
         }
-        if (Input.GetMouseButtonUp(1))
+        else if (Input.GetMouseButtonDown(0) && manager.aiming)
         {
             manager.aiming = false;
             zoomStartTime = Time.time;
