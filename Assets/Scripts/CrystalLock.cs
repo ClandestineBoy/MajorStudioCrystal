@@ -31,7 +31,7 @@ public class CrystalLock : MonoBehaviour
     {
         
     }
-    
+    Vector3 newPos;
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
@@ -42,9 +42,8 @@ public class CrystalLock : MonoBehaviour
                 for (int i = 0; i < crystalRequired; i++)
                 {
                     stonesTaken.Add(manager.playerStones[i]);
-                    Transform newPos = stonesTaken[i].transform;
-                    newPos.position = new Vector3(Mathf.Cos(((sliceDegree * (i + 1)-(sliceDegree/2))*Mathf.PI)/180) * ((door.GetComponent<MeshFilter>().mesh.bounds.size.x * transform.localScale.x)/2), Mathf.Sin(((sliceDegree * (i + 1) - (sliceDegree / 2)) * Mathf.PI) / 180) * ((door.GetComponent<MeshFilter>().mesh.bounds.size.x * transform.localScale.x) / 2),1);
-                    newPos.position = newPos.position + door.transform.position;
+                    newPos = new Vector3(Mathf.Cos(((sliceDegree * (i + 1)-(sliceDegree/2))*Mathf.PI)/180) * ((door.GetComponent<MeshFilter>().mesh.bounds.size.x * transform.localScale.x)/2), Mathf.Sin(((sliceDegree * (i + 1) - (sliceDegree / 2)) * Mathf.PI) / 180) * ((door.GetComponent<MeshFilter>().mesh.bounds.size.x * transform.localScale.x) / 2),1);
+                    newPos = newPos + door.transform.position;
                     stonesTaken[i].GetComponent<Orbit>().Orbiting = false;
                     stonesTaken[i].GetComponent<Orbit>().lockEnd = newPos;
                     stonesTaken[i].GetComponent<Orbit>().lockSetUp();
