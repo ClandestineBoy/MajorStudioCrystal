@@ -9,11 +9,15 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="AnchorCrystal.cs" t="Include" />
+          <e p="ArcaneSpriteManager.cs" t="Include" />
           <e p="Camera_Controller.cs" t="Include" />
+          <e p="CrystalLock.cs" t="Include" />
+          <e p="FallChecker.cs" t="Include" />
           <e p="Game_Manager.cs" t="Include" />
           <e p="ObsticleController.cs" t="Include" />
           <e p="Orbit.cs" t="Include" />
           <e p="Player_Controller.cs" t="Include" />
+          <e p="UIRotate.cs" t="Include" />
         </e>
         <e p="SineVFX" t="Include">
           <e p="PostProcessing" t="Include">
