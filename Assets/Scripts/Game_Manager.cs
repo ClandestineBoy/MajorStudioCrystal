@@ -21,12 +21,7 @@ public class Game_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(playerpos.position.y <= -6f)
-        //{
-        //    playerpos.position = spawnpoint.position;
-        //}
-        if (playerpos.position.y <= -6f)
-            playerpos = spawnpoint;
+
     }
 
     public void idSetter()
