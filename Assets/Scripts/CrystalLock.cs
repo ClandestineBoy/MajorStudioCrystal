@@ -10,32 +10,50 @@ public class CrystalLock : MonoBehaviour
 
     public GameObject door;
     public List<GameObject> stonesTaken;
+    List<Transform> crystalPositions;
     public int crystalRequired;
     public Text display;
-    // Start is called before the first frame update
+    float sliceDegree;
+
     void Start()
     {
+        sliceDegree = 360 / crystalRequired;
         gameManager = GameObject.FindGameObjectWithTag("GameController");
         manager = gameManager.GetComponent<Game_Manager>();
 
         display.text = crystalRequired + "";
-        door = transform.parent.gameObject;
-        Debug.Log(transform.parent.gameObject.name);
+        door = transform.GetChild(0).gameObject;
+        Debug.Log(Mathf.Sin(90));
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
     }
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
             if(manager.playerStones.Count >= crystalRequired)
-            door.SetActive(false);
-
+            {
+                door.SetActive(false);
+                for (int i = 0; i < crystalRequired; i++)
+                {
+                    stonesTaken.Add(manager.playerStones[i]);
+                    Transform newPos = stonesTaken[i].transform;
+                    newPos.position = new Vector3(Mathf.Cos(((sliceDegree * (i + 1)-(sliceDegree/2))*Mathf.PI)/180) * ((door.GetComponent<MeshFilter>().mesh.bounds.size.x * transform.localScale.x)/2), Mathf.Sin(((sliceDegree * (i + 1) - (sliceDegree / 2)) * Mathf.PI) / 180) * ((door.GetComponent<MeshFilter>().mesh.bounds.size.x * transform.localScale.x) / 2),1);
+                    newPos.position = newPos.position + door.transform.position;
+                    stonesTaken[i].GetComponent<Orbit>().Orbiting = false;
+                    stonesTaken[i].GetComponent<Orbit>().lockEnd = newPos;
+                    stonesTaken[i].GetComponent<Orbit>().lockSetUp();
+                }
+                for (int i = crystalRequired-1; i >= 0; i--)
+                {
+                    manager.playerStones.Remove(stonesTaken[i]);
+                }
+            }
         }
     }
 }
