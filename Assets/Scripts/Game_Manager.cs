@@ -6,6 +6,7 @@ public class Game_Manager : MonoBehaviour
 {
     public bool aiming;
     public List<GameObject> playerStones;
+    public Transform playerpos, spawnpoint;
     //public Vector3 diagonal;
     //public Vector3 reversediagonal;
     //Orbit orbit;
@@ -20,7 +21,12 @@ public class Game_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //if(playerpos.position.y <= -6f)
+        //{
+        //    playerpos.position = spawnpoint.position;
+        //}
+        if (playerpos.position.y <= -6f)
+            playerpos = spawnpoint;
     }
 
     public void idSetter()

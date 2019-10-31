@@ -9,6 +9,13 @@ public class FallChecker : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        player.position = spawnpoint.position;
+        if (other.gameObject.tag == "Player")
+            player.position = spawnpoint.position;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+            player.position = spawnpoint.position;
     }
 }
