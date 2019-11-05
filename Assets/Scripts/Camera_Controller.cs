@@ -28,6 +28,9 @@ public class Camera_Controller : MonoBehaviour
     public float mouseSensitivityX;
     public float mouseSensitivityY;
 
+    private Vector3 dir;
+    public Vector3 clipDistance;
+
     void Awake()
     {
         camPos.z = -4;
@@ -38,6 +41,7 @@ public class Camera_Controller : MonoBehaviour
         manager = gameManager.GetComponent<Game_Manager>();
         manager.aiming = false;
         cam = Camera.main;
+        //clipDistance = new Vector3(0, 0, 1);
         
     }
 
@@ -45,6 +49,21 @@ public class Camera_Controller : MonoBehaviour
     {
         MoveCam();
         ZoomCam();
+        dir = player.position - transform.position;
+        CameraCollideCheck();
+    }
+
+    void CameraCollideCheck()
+    {
+        RaycastHit hit;
+        //Debug.DrawRay(transform.position, -transform.forward, Color.red, 1000000f);
+        Debug.DrawRay(transform.position, dir, Color.red, 1000000f);
+        if (Physics.Raycast(transform.position + clipDistance, dir, out hit, 100f))
+        {
+            Debug.Log(hit.transform.name);
+            // cam.transform.position += new Vector3(0f, 0f, 1f);
+            Vector3.MoveTowards(transform.position, player.position, 10 * Time.deltaTime);
+        }
     }
 
     void RotateCam()

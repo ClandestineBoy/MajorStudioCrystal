@@ -80,7 +80,20 @@ public class Player_Controller : MonoBehaviour
         desiredMoveDirection.y = verticalVelocity;
         //move
         characterController.Move(desiredMoveDirection * Time.deltaTime);
+
+       // CameraCollideCheck();
     }
+
+    //void CameraCollideCheck()
+    //{
+    //    RaycastHit hit;
+    //    Debug.DrawRay(transform.position, -transform.forward, Color.red, 1000000f);
+    //    if (Physics.Raycast(transform.position, -transform.forward, out hit))
+    //    {
+    //        Debug.Log(hit.transform.name);
+    //       // cam.transform.position += new Vector3(0f, 0f, 1f);
+    //    }
+    //}
 
     void PlayerMoveAndRotate()
     {
