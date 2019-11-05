@@ -30,7 +30,7 @@ public class ObsticleController : MonoBehaviour
     void Update()
     {
         weightDisplay.text = "" + weight;
-        if (manager.playerStones.Count >= weight && zerograv == false)
+        if (manager.playerStones.Count >= weight)
         {
             if (!meetsCount)
             {
@@ -38,36 +38,27 @@ public class ObsticleController : MonoBehaviour
                 rb.isKinematic = false;
             }
             if (!manager.aiming)
-                rb.isKinematic = false;
-            if (Input.GetMouseButtonUp(1))
             {
+                //rb.isKinematic = true;
+            }
+            else if (Input.GetMouseButton(0))
+            {
+                if (zerograv)
+                {
+                    rb.useGravity = false;
+                }
+                else
+                {
+                    rb.useGravity = true;
+                }
                 transform.SetParent(null);
-                rb.useGravity = true;
             }
-        }
-        if (manager.playerStones.Count >= weight && zerograv == true)
-        {
-            if (!meetsCount)
-            {
-                meetsCount = true;
-                rb.isKinematic = false;
-            }
-            if (!manager.aiming)
-                rb.isKinematic = true;
-            if (Input.GetMouseButtonUp(1))
-            {
-                transform.SetParent(null);
-                rb.useGravity = false;
-
-                print("Hello");
-            }
-
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Move Boy" && manager.aiming && manager.playerStones.Count >= 2*weight)
+        if(other.gameObject.tag == "Move Boy" && manager.aiming && manager.playerStones.Count >= weight && zerograv)
         {
             transform.SetParent(other.gameObject.transform);
             transform.position = other.gameObject.transform.position;
