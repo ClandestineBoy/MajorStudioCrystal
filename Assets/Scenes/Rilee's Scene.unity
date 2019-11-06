@@ -5176,11 +5176,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 314459652}
-    - target: {fileID: 5238091677040386203, guid: b6b2fc178293d704bbffe9512ba6d792,
-        type: 3}
-      propertyPath: m_TagString
-      value: Move Boy
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6b2fc178293d704bbffe9512ba6d792, type: 3}
 --- !u!1001 &8051596130058393957
@@ -5396,10 +5391,6 @@ PrefabInstance:
     - target: {fileID: 8371593222391665085, guid: 4834e6bebf52f1744bcb70286616d8ff,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1688407423, guid: 4834e6bebf52f1744bcb70286616d8ff, type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
