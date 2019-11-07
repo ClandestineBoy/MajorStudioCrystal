@@ -39,10 +39,11 @@ public class ObsticleController : MonoBehaviour
             }
             if (!manager.aiming)
             {
-                //rb.isKinematic = true;
+                rb.isKinematic = true;
             }
             else if (Input.GetMouseButton(0))
             {
+                rb.isKinematic = false; 
                 if (zerograv)
                 {
                     rb.useGravity = false;
@@ -56,14 +57,19 @@ public class ObsticleController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Move Boy" && manager.aiming && manager.playerStones.Count >= weight && zerograv)
         {
-            transform.SetParent(other.gameObject.transform);
+           transform.SetParent(other.gameObject.transform);
+            //transform.parent = other.transform;
             transform.position = other.gameObject.transform.position;
             rb.isKinematic = true;
             rb.useGravity = false;
+            print("hit meh");
         }
+       
+
+        
     }
 }

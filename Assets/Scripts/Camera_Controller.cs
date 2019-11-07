@@ -69,8 +69,6 @@ public class Camera_Controller : MonoBehaviour
 
         LayerMask mask = LayerMask.GetMask("Wall");
 
-        //print("mask: " + LayerMask.LayerToName(mask));
-
         if (Physics.Raycast(Camera.main.transform.position, dir, out hit, rayLength, mask))
         {
             //if (hit.transform.name.Contains("Wall"))
@@ -83,7 +81,11 @@ public class Camera_Controller : MonoBehaviour
         }
         else
         {
+
             cam.transform.position = Vector3.MoveTowards(cam.transform.position, transform.position + player.eulerAngles, 1);
+            //Debug.Log(hit.transform.name);
+            //cam.transform.position += new Vector3(0f, 0f, 1f);
+            Vector3.MoveTowards(transform.position, player.position, 10 * Time.deltaTime);
         }
     }
 
