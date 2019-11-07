@@ -60,7 +60,7 @@ public class Camera_Controller : MonoBehaviour
         Debug.DrawRay(transform.position, dir, Color.red, 1000000f);
         if (Physics.Raycast(transform.position + clipDistance, dir, out hit, 100f))
         {
-            Debug.Log(hit.transform.name);
+//            Debug.Log(hit.transform.name);
             // cam.transform.position += new Vector3(0f, 0f, 1f);
             Vector3.MoveTowards(transform.position, player.position, 10 * Time.deltaTime);
         }
