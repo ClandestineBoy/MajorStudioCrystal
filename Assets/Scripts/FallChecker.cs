@@ -6,7 +6,7 @@ public class FallChecker : MonoBehaviour
 {
     public Transform player;
     public Transform spawnpoint;
-
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")

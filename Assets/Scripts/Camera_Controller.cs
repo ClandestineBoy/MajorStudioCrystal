@@ -14,6 +14,7 @@ public class Camera_Controller : MonoBehaviour
     public float baseRightDistance;
     public float baseUpDistance;
     private Vector3 camPos;
+    private Vector3 originalCamPos;
 
     [Header("Camera Zoom")]
     public Vector3 camBack;
@@ -41,28 +42,48 @@ public class Camera_Controller : MonoBehaviour
         manager = gameManager.GetComponent<Game_Manager>();
         manager.aiming = false;
         cam = Camera.main;
+        originalCamPos = this.transform.position;
         //clipDistance = new Vector3(0, 0, 1);
-        
     }
 
     void Update()
     {
+
         MoveCam();
         ZoomCam();
-        dir = player.position - transform.position;
+        dir = player.position - Camera.main.transform.position;
+        dir.Normalize();
+
         CameraCollideCheck();
     }
 
+    //WIP: Fix for making the camera not phase behind walls
+
     void CameraCollideCheck()
     {
+        //print("Camera.main.transform.position:" + Camera.main.transform.position);
+
+        float rayLength = 6;
         RaycastHit hit;
-        //Debug.DrawRay(transform.position, -transform.forward, Color.red, 1000000f);
-        Debug.DrawRay(transform.position, dir, Color.red, 1000000f);
-        if (Physics.Raycast(transform.position + clipDistance, dir, out hit, 100f))
+        Debug.DrawRay(Camera.main.transform.position, dir * rayLength, Color.red);
+
+        LayerMask mask = LayerMask.GetMask("Wall");
+
+        //print("mask: " + LayerMask.LayerToName(mask));
+
+        if (Physics.Raycast(Camera.main.transform.position, dir, out hit, rayLength, mask))
         {
-            Debug.Log(hit.transform.name);
-            // cam.transform.position += new Vector3(0f, 0f, 1f);
-            Vector3.MoveTowards(transform.position, player.position, 10 * Time.deltaTime);
+            //if (hit.transform.name.Contains("Wall"))
+            {
+                Debug.Log("Hit Wall!");
+                Debug.Log(hit.transform.name);
+                //cam.transform.position = Vector3.MoveTowards(cam.transform.position, player.position, 1);
+                cam.transform.position = player.position + player.eulerAngles.normalized;
+            }
+        }
+        else
+        {
+            cam.transform.position = Vector3.MoveTowards(cam.transform.position, transform.position + player.eulerAngles, 1);
         }
     }
 
