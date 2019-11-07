@@ -14,6 +14,7 @@
           <e p="CrystalLock.cs" t="Include" />
           <e p="FallChecker.cs" t="Include" />
           <e p="Game_Manager.cs" t="Include" />
+          <e p="MusicBehavior.cs" t="Include" />
           <e p="ObsticleController.cs" t="Include" />
           <e p="Orbit.cs" t="Include" />
           <e p="Player_Controller.cs" t="Include" />

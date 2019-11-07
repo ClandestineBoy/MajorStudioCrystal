@@ -9,6 +9,8 @@ TagManager:
   - Obstical
   - Move Boy
   - zerograv
+  - lvl1end
+  - lvl2end
   layers:
   - Default
   - TransparentFX
