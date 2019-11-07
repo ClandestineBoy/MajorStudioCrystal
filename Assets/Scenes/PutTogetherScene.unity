@@ -1404,7 +1404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bc630a1f56433dac14d753406c9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 620281831}
   spawnpoint: {fileID: 1739852119}
 --- !u!65 &93279324
 BoxCollider:
@@ -2413,7 +2413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bc630a1f56433dac14d753406c9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 620281831}
   spawnpoint: {fileID: 1739852119}
 --- !u!65 &158925673
 BoxCollider:
@@ -8446,8 +8446,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528146516}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 13.357563, y: -5.615, z: 8.98605}
-  m_LocalScale: {x: 2.424888, y: 0.47582752, z: 0.820262}
+  m_LocalPosition: {x: 13.357563, y: -5.65, z: 8.98605}
+  m_LocalScale: {x: 2.403064, y: 0.47154507, z: 0.8128797}
   m_Children: []
   m_Father: {fileID: 1626452715}
   m_RootOrder: 3
@@ -8464,7 +8464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bc630a1f56433dac14d753406c9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 620281831}
   spawnpoint: {fileID: 1739852119}
 --- !u!65 &528146519
 BoxCollider:
@@ -8767,7 +8767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bc630a1f56433dac14d753406c9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 620281831}
   spawnpoint: {fileID: 1739852119}
 --- !u!65 &540105057
 BoxCollider:
@@ -11243,7 +11243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bc630a1f56433dac14d753406c9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 620281831}
   spawnpoint: {fileID: 1739852119}
 --- !u!65 &678209908
 BoxCollider:
@@ -11658,7 +11658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bc630a1f56433dac14d753406c9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 620281831}
   spawnpoint: {fileID: 1739852119}
 --- !u!65 &688478727
 BoxCollider:
@@ -16702,7 +16702,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018879089}
   m_LocalRotation: {x: 0.4929791, y: 0.5069237, z: 0.50692374, w: -0.49297914}
-  m_LocalPosition: {x: 2.96, y: -4.0826, z: 26.9188}
+  m_LocalPosition: {x: 2.73, y: -4.0826, z: 26.9188}
   m_LocalScale: {x: 3.6560016, y: 0.47582757, z: 1.1127406}
   m_Children: []
   m_Father: {fileID: 1626452715}
@@ -17511,7 +17511,7 @@ PrefabInstance:
     - target: {fileID: 8371593222391665085, guid: 4834e6bebf52f1744bcb70286616d8ff,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.690002
+      value: -23.2
       objectReference: {fileID: 0}
     - target: {fileID: 8371593222391665085, guid: 4834e6bebf52f1744bcb70286616d8ff,
         type: 3}
@@ -19252,7 +19252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bc630a1f56433dac14d753406c9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 620281831}
   spawnpoint: {fileID: 1739852119}
 --- !u!65 &1205492504
 BoxCollider:
@@ -25188,7 +25188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bc630a1f56433dac14d753406c9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 620281831}
   spawnpoint: {fileID: 1739852119}
 --- !u!65 &1592893063
 BoxCollider:
@@ -30279,7 +30279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1bc630a1f56433dac14d753406c9ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 620281831}
   spawnpoint: {fileID: 1739852119}
 --- !u!65 &1912281634
 BoxCollider:
