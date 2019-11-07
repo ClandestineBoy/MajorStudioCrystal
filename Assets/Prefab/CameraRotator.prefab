@@ -52,10 +52,11 @@ MonoBehaviour:
   camBack: {x: 0, y: 0, z: -5}
   camZoom: {x: 0, y: 0, z: -1.5}
   zoomSpeed: 10
-  Y_ANGLE_MIN: -60
-  Y_ANGLE_MAX: 35
+  Y_ANGLE_MIN: -85
+  Y_ANGLE_MAX: 85
   mouseSensitivityX: 3
   mouseSensitivityY: 3
+  clipDistance: {x: 0, y: 0, z: 0}
 --- !u!1 &8355033307629419682
 GameObject:
   m_ObjectHideFlags: 0

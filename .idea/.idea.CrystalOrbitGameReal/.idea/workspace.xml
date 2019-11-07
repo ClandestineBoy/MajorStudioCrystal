@@ -12,12 +12,12 @@
     <session id="567530797">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.6" value="5" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -113,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Orbit.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
+            <state relative-caret-position="2205">
               <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
               <folding>
                 <marker date="1572555742181" expanded="false" signature="6:78" ph="..." />
@@ -197,13 +197,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,11 +258,12 @@
       <workItem from="1572990807115" duration="535000" />
       <workItem from="1573069376922" duration="703000" />
       <workItem from="1573083286704" duration="2623000" />
+      <workItem from="1573087833285" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9516000" />
+    <option name="totallyTimeSpent" value="10116000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -277,7 +278,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.52348995" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.52348995" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -322,6 +323,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ArcaneSpriteManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Camera_Controller.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -340,19 +348,6 @@
             <marker date="1572982430554" expanded="true" signature="3097:3192" ph="{...}" />
             <marker date="1572982430554" expanded="true" signature="3292:3379" ph="{...}" />
             <marker date="1572982430554" expanded="true" signature="3392:3479" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ArcaneSpriteManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <marker date="1572471706606" expanded="false" signature="6:78" ph="..." />
-            <marker date="1572471706606" expanded="true" signature="128:308" ph="{...}" />
-            <marker date="1572471706606" expanded="true" signature="205:226" ph="{...}" />
-            <marker date="1572471706606" expanded="true" signature="284:305" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -379,21 +374,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIRotate.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <marker date="1572200260358" expanded="false" signature="6:100" ph="..." />
-            <marker date="1572200260358" expanded="true" signature="139:657" ph="{...}" />
-            <marker date="1572200260358" expanded="true" signature="274:483" ph="{...}" />
-            <marker date="1572200260358" expanded="true" signature="518:655" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Orbit.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
+        <state relative-caret-position="2205">
           <caret line="149" column="37" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
           <folding>
             <marker date="1572555742181" expanded="false" signature="6:78" ph="..." />
@@ -419,6 +402,18 @@
             <marker date="1572555742181" expanded="true" signature="4839:5064" ph="{...}" />
             <marker date="1572555742181" expanded="true" signature="4895:5058" ph="{...}" />
             <marker date="1572555742181" expanded="true" signature="4943:5048" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UIRotate.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1572200260358" expanded="false" signature="6:100" ph="..." />
+            <marker date="1572200260358" expanded="true" signature="139:657" ph="{...}" />
+            <marker date="1572200260358" expanded="true" signature="274:483" ph="{...}" />
+            <marker date="1572200260358" expanded="true" signature="518:655" ph="{...}" />
           </folding>
         </state>
       </provider>
